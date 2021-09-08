@@ -9,78 +9,82 @@
     --lighGreenColor: #1abc9c;
 }
 
-body{
+html{
     width: 100%;
-    height: 100vh
+    height: 100vh;
     display: flex;
 	flex-direction: column;
-	flex-wrap: nowrap;
 	justify-content: flex-start;
-	 
+	align-items: center;
+}
+
+body{
+    width: 80%;
+    height:100vh
+    display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;	 
 }
 
 /*header section*/
+
 #header{
-    color: var(--lightColor);
     width: 100%;
-    
+    height: 35%;
+    display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+    color: var(--lightColor);
+    margin-bottom: 10px;
 }
 
 #navbar{
+    width: 100%;
+    height: 57px;
     background-color: var(--lightBlueColor) ;
     display: flex;
 	flex-direction: row;
-	flex-wrap: nowrap;
 	justify-content: space-between;
 	align-items: center;
 	align-content: stretch;
-    width: 100%;
-    height: 57px;
 }
 .Title{
     font-family: rosario ;
     font-size: 28px;
 }
-
 .Text{font-family: roboto;
-
 }
-
 .user{
     font-size: 25px;
     width: 22px;
     height: 29px;
     color: var(--lightColor);
     margin-top: 15px;
-    margin-right:20px 
-    
+    margin-right:20px  
 }
-
 #T1{
     margin-left: 18px;
     margin-top: 10px
-    
 }
 
-#joinUs{
+#hero{
+    width: 100%;
+    height: 90%;
+    background-image: url(./project-01-images/hero.jpg);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#T2{
     display: flex;
 	flex-direction: column;
-	flex-wrap: nowrap;
-	justify-content: center;
-	align-items: stretch;
-	align-content: center;
-    background-image: url(./project-01-images/hero.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 80%vh;
-}
-
-#T2{
-    margin-top: 180px;
+	ustify-content: flex-end;
+	align-items: baseline;
+    margin-top: 150px;
     margin-left: 18px    
 }
-
 #joinUsbutton{
     background-color: var(--lightColor) ;
     height: 40px;
@@ -91,18 +95,18 @@ body{
     font-size: 22px;
     line-height: 26px;
     margin-top: 10px;
-    margin-left: 99px;*/
+    margin-left: 99px;
 }
 
 /* main section*/
 
 main{
+    width: 100%;
+    height: 60%;
     display: flex;
 	flex-direction: column;
-	flex-wrap: nowrap;
 	justify-content: flex-start;
-	align-items: center;*/
-	align-content: stretch;
+	align-items: center;
 }
 #dream{
     width: 219px;
@@ -114,14 +118,13 @@ main{
 #firstGroup{
     display: flex;
 	flex-direction: row;
-	flex-wrap: nowrap;
 	justify-content: space-around;
 	align-items: center;
-	align-content: stretch;
+	align-content: ;
     font-family: roboto; 
     width: 100%;
-    height: 220px;
-    margin-bottom:5px;
+    height: 50%;
+    
 }
 
 .article{
@@ -150,7 +153,6 @@ main{
 #article4{
     width: 100%;
     height: 100%;
-    margin: 0px 25px;
     background-image: url(./project-01-images/6.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -159,7 +161,6 @@ main{
     flex-direction: column;
     padding: 20px;
     border:1px solid
-    position: absolute;
     color: var(--lightColor)     
 }
 main h1{
